@@ -55,19 +55,19 @@ MonoBehaviour:
   mSprites:
   - name: button
     x: 0
-    y: 71
+    y: 194
     width: 225
     height: 56
-    borderLeft: 25
-    borderRight: 28
-    borderTop: 20
-    borderBottom: 18
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: Cell
-    x: 543
+    x: 0
     y: 291
     width: 224
     height: 221
@@ -79,19 +79,58 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: panel
-    x: 0
-    y: 128
-    width: 542
-    height: 384
-    borderLeft: 66
-    borderRight: 55
-    borderTop: 99
-    borderBottom: 67
-    paddingLeft: 25
-    paddingRight: 15
-    paddingTop: 20
-    paddingBottom: 15
+  - name: Num01
+    x: 225
+    y: 382
+    width: 137
+    height: 130
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Num02
+    x: 225
+    y: 251
+    width: 137
+    height: 130
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Num03
+    x: 363
+    y: 251
+    width: 137
+    height: 130
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Num04
+    x: 363
+    y: 382
+    width: 137
+    height: 130
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

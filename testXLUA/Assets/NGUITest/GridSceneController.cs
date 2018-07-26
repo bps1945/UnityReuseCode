@@ -6,31 +6,45 @@ public class GridSceneController : MonoBehaviour {
 
 	// Use this for initialization
 
-    private ArrayList buttonList = new ArrayList();
+    private List<TheCell> cellList = new List<TheCell>();
     public GameObject cellPrefab;
     public UIGrid grid;
 
 	void Start () {
+        this.LayOutGrid();
+    }
+
+    public void LayOutGrid()
+    {
         int cellNum = 23;
+
+        for (int i = 0; i < cellList.Count; i++)
+        {
+            grid.RemoveChild(cellList[i].transform);
+            Destroy(cellList[i].gameObject);
+        }
+        cellList.Clear();
 
         for (int i = 0; i < cellNum; i++)
         {
             GameObject cellInstance = Instantiate(cellPrefab);
             cellInstance.transform.SetParent(grid.transform, false);
             TheCell theCell = cellInstance.GetComponent<TheCell>();
+            theCell.theLabel.text = i.ToString();
+            cellList.Add(theCell);
 
-            buttonList.Add(theCell.theButton.gameObject);
 
-            
             //theCell.theButton.onClick
-            if(null==theCell.theButton)
+            if (null == theCell.theButton)
             {
                 Debug.Log("~~~~~~~~~~~~");
             }
             UIEventListener.Get(theCell.theButton.gameObject).onClick = ButtonTouched;
         }
+
+        grid.repositionNow = true;
     }
- 
+
 
 	
 	// Update is called once per frame
@@ -38,10 +52,20 @@ public class GridSceneController : MonoBehaviour {
 		
 	}
 
-    public void ButtonTouched(GameObject cellObj)
+    public void ButtonTouched(GameObject buttonObj)
     {
-        int touchIndex=buttonList.IndexOf(cellObj);
-        
-        Debug.Log("the index:" + touchIndex);
+        int touchIndex=-1;
+
+        for (int i = 0; i < cellList.Count; i++)
+        {
+            TheCell cell = cellList[i];
+            if (cell.theButton.gameObject == buttonObj)
+            {
+                touchIndex = i;
+                break;
+            }
+        }
+
+        Debug.Log("AAAAAAAAA"+touchIndex);
     }
 }

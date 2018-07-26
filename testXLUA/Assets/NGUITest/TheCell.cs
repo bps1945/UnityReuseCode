@@ -6,7 +6,7 @@ using UnityEngine;
 public class TheCell : MonoBehaviour {
 
     public UIButton theButton;
-
+    public UILabel theLabel;
 
 	// Use this for initialization
 	void Start () {
