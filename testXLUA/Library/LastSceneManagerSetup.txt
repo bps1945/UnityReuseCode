@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/NGUITest/TestScrollView.unity
+- path: Assets/NGUITest/ShowAndHide/ShowAndHide.unity
   isLoaded: 1
   isActive: 1
