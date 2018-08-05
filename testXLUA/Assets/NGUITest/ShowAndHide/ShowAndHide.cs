@@ -6,12 +6,22 @@ public class ShowAndHide : MonoBehaviour {
 
 	// Use this for initialization
 
-    bool isShow = true;
-    public float speed=0.5f;
+    enum State
+    {
+        Stay,
+        FadeOut,
+        FadeIn
+    };
+
+    State state=State.Stay;
+    float stayVar;
+
+    public float speed = 0.5f;
+    public float stayTime = 2.0f;
 
     public UIWidget widget;
 	void Start () {
-		
+        stayVar = stayTime;
 	}
 	
 	// Update is called once per frame
@@ -19,23 +29,36 @@ public class ShowAndHide : MonoBehaviour {
         //Debug.Log("111111");
 
         Color color = widget.color;
-        Debug.Log(color.a);
-        float incDec = 1.0f;
-        if (isShow)
-        {
-            incDec = -1.0f;
-        }
-        color.a += incDec * speed * Time.deltaTime;
 
+        //color.a += incDec * speed * Time.deltaTime;
+        if (State.Stay == this.state)
+        {
+			this.stayVar -= Time.deltaTime;
 
-        if (color.a >= 1)
-        {
-            isShow = true;
+            if (this.stayVar <= 0)
+            {
+                this.state = State.FadeOut;
+                //recover
+                this.stayVar = stayTime;
+            }
         }
-        else if (color.a <= 0)
+        else if (State.FadeOut == this.state)
         {
-            isShow = false;
+            color.a -= speed;
+			widget.color = color;
+			if (color.a <= 0)
+            {
+                this.state = State.FadeIn;
+            }
         }
-        widget.color = color;
+        else if (State.FadeIn == this.state)
+        {
+            color.a += speed;
+			widget.color = color;
+			if (color.a >= 1.0f)
+            {
+                this.state = State.Stay;
+            }
+        }
 	}
 }

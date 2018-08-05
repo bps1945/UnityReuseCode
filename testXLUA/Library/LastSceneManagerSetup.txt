@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/NGUITest/ShowAndHide/ShowAndHide.unity
+- path: Assets/XLuaTest/XLuaTestScene.unity
   isLoaded: 1
   isActive: 1
