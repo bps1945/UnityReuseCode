@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Update>
+	<FullUpdate LessThanVersion="1.0.0" ClientDownloadUrl=""/>
+	<HotUpdates>
+		<Update Version="1.0.0">
+			<File Name="zip0.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+			<File Name="zip1.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+			<File Name="zip2.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+		</Update>
+		<Update Version="2.0.0">
+			<File Name="zip3.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+			<File Name="zip4.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+			<File Name="zip5.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+		</Update>
+		<Update Version="3.0.0">
+			<File Name="zip6.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+			<File Name="zip7.bundle" MD5="C509A83B43CF8631783F2BA83A49EAD8"/>
+		</Update>
+	</HotUpdates>
+</Update>

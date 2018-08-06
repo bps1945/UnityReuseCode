@@ -78,6 +78,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AssetBundleTest\AssetBundleTestController.cs" />
+    <Compile Include="Assets\AssetBundleTest\Crypto.cs" />
+    <Compile Include="Assets\AssetBundleTest\HotUpdate.cs" />
+    <Compile Include="Assets\AssetBundleTest\VersionUtil.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />

@@ -51,6 +51,8 @@ public class PlayerData {
 
     const string CONST_KEY_LOGGED_IN_SERVER_IDS = "CONST_KEY_LOGGED_IN_SERVER_IDS";
 
+    const string CONST_KEY_LOCAL_VERSION_CODE = "CONST_KEY_LOCAL_VERSION_CODE";
+
     private static void SetIntArray(string key,int[]intArray)
     {
         StringBuilder stringBuilder = new StringBuilder();
@@ -321,6 +323,16 @@ public class PlayerData {
     public static int[] GetLoggedInServerIDs()
     {
         return GetIntArray(CONST_KEY_LOGGED_IN_SERVER_IDS);
+    }
+
+    public static string GetLocalVersionCode()
+    {
+        return PlayerPrefs.GetString(CONST_KEY_LOCAL_VERSION_CODE);
+    }
+
+    public static void SetLocalVersionCode(string versionCode)
+    {
+        PlayerPrefs.SetString(CONST_KEY_LOCAL_VERSION_CODE, versionCode);
     }
 
 }

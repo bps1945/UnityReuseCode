@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2414330646
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: 1732821.sprite
+      Dependencies: {}
+    Info_1:
+      Name: 1732828.sprite
+      Dependencies: {}
