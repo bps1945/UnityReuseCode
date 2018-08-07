@@ -11,22 +11,28 @@ public class VersionUtil : MonoBehaviour {
         LT
     }
 
-
     public static VersionCompareResult VersionStringCompare(string currentVersionStr, string clientVersionStr)
     {
-        int currentVersionNum = VersionStrToNum(currentVersionStr);
-        int clientVersionNum = VersionStrToNum(clientVersionStr);
-        if (currentVersionNum == clientVersionNum)
-        {
-            return VersionCompareResult.EQ;
-        }
-        else if (currentVersionNum > clientVersionNum)
+        if (string.IsNullOrEmpty(clientVersionStr))
         {
             return VersionCompareResult.GT;
         }
         else
         {
-            return VersionCompareResult.LT;
+            int currentVersionNum = VersionStrToNum(currentVersionStr);
+            int clientVersionNum = VersionStrToNum(clientVersionStr);
+            if (currentVersionNum == clientVersionNum)
+            {
+                return VersionCompareResult.EQ;
+            }
+            else if (currentVersionNum > clientVersionNum)
+            {
+                return VersionCompareResult.GT;
+            }
+            else
+            {
+                return VersionCompareResult.LT;
+            }
         }
     }
 
@@ -46,4 +52,32 @@ public class VersionUtil : MonoBehaviour {
         return totalNum;
     }
 
+
+    public static bool VersionFormatCheck(string versionStr)
+    {
+        if (string.IsNullOrEmpty(versionStr))
+        {
+            return false;
+        }
+        else
+        {
+            string[] parts = versionStr.Split('.');
+            if (parts.Length != 3)
+            {
+                return false;
+            }
+            else
+            {
+                foreach (string part in parts)
+                { 
+                    int result;
+                    if (!int.TryParse(part, out result))
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
 }

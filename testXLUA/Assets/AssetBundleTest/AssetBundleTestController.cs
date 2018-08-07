@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-
+using UnityEngine.SceneManagement;
 
 public class AssetBundleTestController : MonoBehaviour {
 
     public Image theImage;
     public Sprite theSprite;
+    public Transform uiParent;
+
+    public ClientUpdate hotUpdate;
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,8 +24,11 @@ public class AssetBundleTestController : MonoBehaviour {
         //VersionUtil.VersionCompareResult result= VersionUtil.VersionStringCompare("1.20.5", "1.5.0");
         //Debug.Log(result);
 
-        string strMD5=Crypto.GetMD5HashFromFile(@"C:\Users\aaa\Documents\GitHub\UnityReuseCode\testXLUA\TheDownload\zip0.bundle");
-        Debug.Log("the MD5:"+strMD5);
+        //string strMD5=Crypto.GetMD5HashFromFile(@"C:\Users\aaa\Documents\GitHub\UnityReuseCode\testXLUA\TheDownload\zip0.bundle");
+        //Debug.Log("the MD5:"+strMD5);
+
+        //GameObject theObj= AssetLoader.GetUIPrefab("ButtonPrefab");
+        //theObj.transform.SetParent(uiParent);
 
 	}
 	
@@ -29,6 +36,18 @@ public class AssetBundleTestController : MonoBehaviour {
 	void Update () {
 		
 	}
+
+
+    public void GoUpdate()
+    {
+        Debug.Log("GoUpdate!!!!");
+        hotUpdate.StartUpdate();
+    
+    
+    }
+
+
+
 
     public void ShowVersion()
     { 
@@ -48,14 +67,18 @@ public class AssetBundleTestController : MonoBehaviour {
     {
         //theImage GeneratedAssetBundle
 
-        string theURL = "file:///C:/Users/aaa/Documents/GitHub/UnityReuseCode/testXLUA/GeneratedAssetBundle/1732821.sprite";
+        string theURL = "file:///C:/Users/aaa/Documents/GitHub/UnityReuseCode/testXLUA/MyDownload/scenetotest.scene";
         WWW asset = new WWW(theURL);
-        AssetBundle bundle = asset.assetBundle;
-        theImage.sprite = bundle.LoadAsset<Sprite>("1732821");
-        //bundle.Unload(false);
+        AssetBundle assetBundle = asset.assetBundle;
+
+        if (assetBundle.isStreamedSceneAssetBundle)
+        {
+            string[] scenePaths = assetBundle.GetAllAssetNames();
+            string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePaths[0]);
+            SceneManager.LoadScene(sceneName);
+        }
 
 
-        //theImage.sprite = sprite;
     }
 
 
@@ -78,6 +101,7 @@ public class AssetBundleTestController : MonoBehaviour {
 
         foreach(string urlStr in urlList)
         {
+
             string filename = System.IO.Path.GetFileName(urlStr);
 
             using (UnityWebRequest www = UnityWebRequest.Get(urlStr))

@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2414330646
+CRC: 1887650066
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -7,4 +7,10 @@ AssetBundleManifest:
       Dependencies: {}
     Info_1:
       Name: 1732828.sprite
+      Dependencies: {}
+    Info_2:
+      Name: buttonprefab.prefab
+      Dependencies: {}
+    Info_3:
+      Name: scenetotest.scene
       Dependencies: {}
