@@ -55,7 +55,7 @@ MonoBehaviour:
   mSprites:
   - name: button
     x: 0
-    y: 14
+    y: 71
     width: 225
     height: 56
     borderLeft: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: button1
     x: 0
-    y: 71
+    y: 14
     width: 225
     height: 56
     borderLeft: 0
@@ -79,6 +79,32 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: ButtonControl
+    x: 226
+    y: 48
+    width: 79
+    height: 79
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 9
+    paddingRight: 12
+    paddingTop: 12
+    paddingBottom: 9
+  - name: ButtonItem
+    x: 681
+    y: 211
+    width: 79
+    height: 79
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 9
+    paddingRight: 12
+    paddingTop: 12
+    paddingBottom: 9
   - name: Cell
     x: 543
     y: 291
@@ -106,19 +132,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Num02
-    x: 543
-    y: 160
-    width: 137
-    height: 130
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: Num03
     x: 768
     y: 382
     width: 137
@@ -131,9 +144,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: Num04
+  - name: Num03
     x: 768
     y: 251
+    width: 137
+    height: 130
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Num04
+    x: 543
+    y: 160
     width: 137
     height: 130
     borderLeft: 0
