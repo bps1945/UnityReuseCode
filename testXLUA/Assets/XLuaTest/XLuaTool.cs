@@ -5,7 +5,7 @@ using XLua;
 
 public class XLuaTool : MonoBehaviour {
 
-    LuaEnv luaEnv;
+    public LuaEnv luaEnv;
 
     public XLuaTool()
     {

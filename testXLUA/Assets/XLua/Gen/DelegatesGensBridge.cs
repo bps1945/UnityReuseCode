@@ -883,6 +883,63 @@ namespace XLua
 #endif
 		}
         
+		public byte[] __Gen_Delegate_Imp31(object p0, ref string p1)
+		{
+#if THREAD_SAFE || HOTFIX_ENABLE
+            lock (luaEnv.luaEnvLock)
+            {
+#endif
+                RealStatePtr L = luaEnv.rawL;
+                int err_func =LuaAPI.load_error_func(L, errorFuncRef);
+                ObjectTranslator translator = luaEnv.translator;
+                
+                LuaAPI.lua_getref(L, luaReference);
+                
+                translator.PushAny(L, p0);
+                LuaAPI.lua_pushstring(L, p1);
+                
+                int __gen_error = LuaAPI.lua_pcall(L, 2, 2, err_func);
+                if (__gen_error != 0)
+                    luaEnv.ThrowExceptionFromError(err_func - 1);
+                
+                p1 = LuaAPI.lua_tostring(L, err_func + 2);
+                
+                byte[] __gen_ret = LuaAPI.lua_tobytes(L, err_func + 1);
+                LuaAPI.lua_settop(L, err_func - 1);
+                return  __gen_ret;
+#if THREAD_SAFE || HOTFIX_ENABLE
+            }
+#endif
+		}
+        
+		public int __Gen_Delegate_Imp32(object p0, int p1)
+		{
+#if THREAD_SAFE || HOTFIX_ENABLE
+            lock (luaEnv.luaEnvLock)
+            {
+#endif
+                RealStatePtr L = luaEnv.rawL;
+                int err_func =LuaAPI.load_error_func(L, errorFuncRef);
+                ObjectTranslator translator = luaEnv.translator;
+                
+                LuaAPI.lua_getref(L, luaReference);
+                
+                translator.PushAny(L, p0);
+                LuaAPI.xlua_pushinteger(L, p1);
+                
+                int __gen_error = LuaAPI.lua_pcall(L, 2, 1, err_func);
+                if (__gen_error != 0)
+                    luaEnv.ThrowExceptionFromError(err_func - 1);
+                
+                
+                int __gen_ret = LuaAPI.xlua_tointeger(L, err_func + 1);
+                LuaAPI.lua_settop(L, err_func - 1);
+                return  __gen_ret;
+#if THREAD_SAFE || HOTFIX_ENABLE
+            }
+#endif
+		}
+        
         
 		static DelegateBridge()
 		{
