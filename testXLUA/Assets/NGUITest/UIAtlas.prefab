@@ -54,8 +54,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: c0150e13225f71645aed94173c6df85c, type: 2}
   mSprites:
   - name: button
-    x: 0
-    y: 71
+    x: 543
+    y: 706
     width: 225
     height: 56
     borderLeft: 0
@@ -67,8 +67,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: button1
-    x: 0
-    y: 14
+    x: 543
+    y: 649
     width: 225
     height: 56
     borderLeft: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonControl
-    x: 226
-    y: 48
+    x: 736
+    y: 569
     width: 79
     height: 79
     borderLeft: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
     paddingTop: 12
     paddingBottom: 9
   - name: ButtonItem
-    x: 681
-    y: 211
+    x: 769
+    y: 683
     width: 79
     height: 79
     borderLeft: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
     paddingTop: 12
     paddingBottom: 9
   - name: Cell
-    x: 543
-    y: 291
+    x: 511
+    y: 418
     width: 224
     height: 221
     borderLeft: 0
@@ -118,9 +118,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: LOGO
+    x: 0
+    y: 412
+    width: 510
+    height: 227
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Num01
-    x: 543
-    y: 29
+    x: 681
+    y: 763
     width: 137
     height: 130
     borderLeft: 0
@@ -132,8 +145,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Num02
-    x: 768
-    y: 382
+    x: 543
+    y: 894
     width: 137
     height: 130
     borderLeft: 0
@@ -145,8 +158,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Num03
-    x: 768
-    y: 251
+    x: 543
+    y: 763
     width: 137
     height: 130
     borderLeft: 0
@@ -158,8 +171,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Num04
-    x: 543
-    y: 160
+    x: 681
+    y: 894
     width: 137
     height: 130
     borderLeft: 0
@@ -172,7 +185,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: panel
     x: 0
-    y: 128
+    y: 640
     width: 542
     height: 384
     borderLeft: 0

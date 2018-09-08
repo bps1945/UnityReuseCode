@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/NGUITest/TestShenSuoAnNiu.unity
+- path: "Assets/GameTest/0000.SFXPlayer\u97F3\u4E50\u97F3\u6548\u64AD\u653EcrossScene/SFXPlayer\u97F3\u4E50\u97F3\u6548\u64AD\u653EcrossScene.unity"
   isLoaded: 1
   isActive: 1

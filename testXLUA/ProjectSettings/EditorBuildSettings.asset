@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 96a12cccef350b14aab1c9564f2fcefc
+  - enabled: 1
+    path: "Assets/GameTest/RaycastCharSelect\u5C04\u7EBF\u9009\u62E9\u89D2\u8272.unity"
+    guid: 4f35b8a9b11c4714ebf31083d9040a85
+  - enabled: 1
+    path: "Assets/GameTest/0000.SFXPlayer\u97F3\u4E50\u97F3\u6548\u64AD\u653EcrossScene/SFXPlayer2.unity"
+    guid: 83438326260f1e445b3db119a9419c3c
