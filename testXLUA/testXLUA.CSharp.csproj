@@ -106,6 +106,7 @@
     <Compile Include="Assets\GameTest\0000.SFXPlayer音乐音效播放crossScene\NewBehaviourScript.cs" />
     <Compile Include="Assets\GameTest\0000.SFXPlayer音乐音效播放crossScene\SFXPlayer.cs" />
     <Compile Include="Assets\GameTest\0000.SFXPlayer音乐音效播放crossScene\SFXSceneController.cs" />
+    <Compile Include="Assets\GameTest\0001.testSceneLoad只场景,加载别的\SceneLoadController.cs" />
     <Compile Include="Assets\GameTest\CameraMove.cs" />
     <Compile Include="Assets\GameTest\Drag.cs" />
     <Compile Include="Assets\GameTest\RaycastCharselectController.cs" />
@@ -390,6 +391,7 @@
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
     <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+    <None Include="Assets\GameTest\0001.testSceneLoad只场景,加载别的\先加载scene,后加入controller这些.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />

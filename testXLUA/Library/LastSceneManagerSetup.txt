@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/GameTest/0000.SFXPlayer\u97F3\u4E50\u97F3\u6548\u64AD\u653EcrossScene/SFXPlayer\u97F3\u4E50\u97F3\u6548\u64AD\u653EcrossScene.unity"
+- path: "Assets/GameTest/0001.testSceneLoad\u53EA\u573A\u666F,\u52A0\u8F7D\u522B\u7684/ControlScene.unity"
   isLoaded: 1
   isActive: 1
