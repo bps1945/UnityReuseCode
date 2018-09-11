@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/GameTest/0001.testSceneLoad\u53EA\u573A\u666F,\u52A0\u8F7D\u522B\u7684/ControlScene.unity"
+- path: "Assets/GameTest/0002.\u4EBA\u7269\u811A\u4E0B\u7684\u5149\u73AF/New Scene.unity"
   isLoaded: 1
   isActive: 1
