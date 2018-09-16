@@ -56,7 +56,9 @@ public class LuaTestController : MonoBehaviour {
 //                end)
 //            ");
 
-        string path = "Assets/XLuaTest/hello.lua";
+        //string path = "Assets/XLuaTest/hello.lua";
+        string path = "Assets/XLuaTest/compiled.lua";
+        //compiled
 
         //Read the text from directly from the test.txt file
         StreamReader reader = new StreamReader(path); 
@@ -78,6 +80,8 @@ public class LuaTestController : MonoBehaviour {
         //this.SetVector3();
 
         //theAudioSource.Play();
+
+        //xLuaTool.DoString("print(_VERSION) ");
     }
 
     void MemberMethod()
