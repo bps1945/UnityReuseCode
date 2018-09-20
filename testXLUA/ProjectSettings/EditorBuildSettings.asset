@@ -18,5 +18,5 @@ EditorBuildSettings:
     path: "Assets/GameTest/0001.testSceneLoad\u53EA\u573A\u666F,\u52A0\u8F7D\u522B\u7684/ControlScene.unity"
     guid: fd7b2af17dd855540953e8dc871b153c
   - enabled: 1
-    path: "Assets/GameTest/0001.testSceneLoad\u53EA\u573A\u666F,\u52A0\u8F7D\u522B\u7684/ControllersScene.unity"
-    guid: 9bc56fc727247ff418063f8b0ca71f90
+    path: Assets/GameTest/0007.notificationCenter/New Scene222.unity
+    guid: 18bb6ef0eecc7ca44a11df3abeab957b

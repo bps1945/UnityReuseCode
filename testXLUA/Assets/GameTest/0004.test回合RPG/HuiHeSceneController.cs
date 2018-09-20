@@ -9,6 +9,7 @@ public class HuiHeSceneController : MonoBehaviour {
     public GameObject[] playerCharacters;
     public GameObject[] enemyCharacters;
 
+    public GameObject magicFXPrefab;
 
 	void Start () {
 		
@@ -23,7 +24,30 @@ public class HuiHeSceneController : MonoBehaviour {
     public void PlayerOneMagicAttackWithNoDelay()
     {
         TheCharacter character=this.playerCharacters[0].GetComponent<TheCharacter>();
+        character.magicCastDone = new TheCharacter.MagicCastDone(this.MagicCastDone);
         character.MagicCast();
+        //character.GotHit();
+
+
+
+    }
+
+    public void MagicCastDone()
+    {
+        Debug.Log("MagicCastDone");
+
+        TheCharacter enemyCharacter = this.enemyCharacters[0].GetComponent<TheCharacter>();
+        enemyCharacter.GotHit();
+        this.AddFx(enemyCharacter.gameObject);
+    }
+
+
+
+
+
+    public void AddFx(GameObject gameObj)
+    {
+        Instantiate(magicFXPrefab, gameObj.transform);
     }
 
 }

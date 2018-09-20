@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/GameTest/0004.test\u56DE\u5408RPG/New Scene.unity"
+- path: Assets/GameTest/0010.testResolution/testResolutionScene.unity
   isLoaded: 1
   isActive: 1

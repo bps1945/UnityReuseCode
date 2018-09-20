@@ -1451,6 +1451,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23032407491242336, guid: 2708fc1a6b72e6e449cca09961e5a7f8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 166ba950c7d54a6449dadfd024398333, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2708fc1a6b72e6e449cca09961e5a7f8, type: 2}
   m_IsPrefabParent: 0
@@ -1707,6 +1712,8 @@ MonoBehaviour:
   - {fileID: 1830975557}
   - {fileID: 338968437}
   - {fileID: 288541657}
+  magicFXPrefab: {fileID: 1769545039881556, guid: babc9d7c372ba3a498052a29c763d3f1,
+    type: 2}
 --- !u!4 &830073346
 Transform:
   m_ObjectHideFlags: 0
@@ -3316,7 +3323,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4500767506824280, guid: 2708fc1a6b72e6e449cca09961e5a7f8, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23032407491242336, guid: 2708fc1a6b72e6e449cca09961e5a7f8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 166ba950c7d54a6449dadfd024398333, type: 2}
+    - target: {fileID: 1589018980690086, guid: 2708fc1a6b72e6e449cca09961e5a7f8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2708fc1a6b72e6e449cca09961e5a7f8, type: 2}
@@ -3892,10 +3908,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cac13b6b399214e87066a47614bb8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texIdle: {fileID: 0}
-  texMagicCast: {fileID: 0}
-  texGotHit: {fileID: 0}
-  rend: {fileID: 0}
+  texIdle: {fileID: 2800000, guid: b4729a583fd317b48a9adacd0b0de9eb, type: 3}
+  texMagicCast: {fileID: 2800000, guid: c2d764c452dd2ca4f98ce6b521850e6a, type: 3}
+  texGotHit: {fileID: 2800000, guid: c3dbe7e3e3c87d448ad4015fc96a9a66, type: 3}
+  rend: {fileID: 2077674261}
 --- !u!1 &1913565458
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,6 +4135,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4500767506824280, guid: 2708fc1a6b72e6e449cca09961e5a7f8,
     type: 2}
   m_PrefabInternal: {fileID: 1637893534}
+--- !u!23 &2077674261 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 23032407491242336, guid: 2708fc1a6b72e6e449cca09961e5a7f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 562365655}
 --- !u!1 &2081779425
 GameObject:
   m_ObjectHideFlags: 0

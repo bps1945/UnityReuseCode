@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class TheCharacter : MonoBehaviour {
 
+    public delegate void MagicCastDone();
+
+
     public Texture texIdle;
     public Texture texMagicCast;
     public Texture texGotHit;
 
     public Renderer rend;
+
+
+    int stateMagicCast = 0;
+    int stateShowMagicOnEnemy=1;
+    int stateEnemyGotHit = 2;
+    int stateMagicCastDone = 3;
+
+    int currentState;
+
+    public MagicCastDone magicCastDone;
+
+
 	// Use this for initialization
 	void Start () {
         //this.Idle();
@@ -29,6 +44,12 @@ public class TheCharacter : MonoBehaviour {
         CancelInvoke("Idle");
         rend.material.mainTexture = texMagicCast;
         Invoke("Idle", 3);
+
+        //event
+        CancelInvoke("MagicCastDoneEvent");
+        Invoke("MagicCastDoneEvent", 3);
+
+        this.currentState = stateMagicCast;
     }
 
     public void GotHit()
@@ -38,6 +59,12 @@ public class TheCharacter : MonoBehaviour {
         Invoke("Idle", 3);
     }
 
-    
+    public void MagicCastDoneEvent()
+    {
+        //this.currentState = stateMagicCast;
+
+        this.currentState = stateShowMagicOnEnemy;
+        this.magicCastDone();
+    }
 
 }
